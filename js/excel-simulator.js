@@ -187,7 +187,7 @@
           <div class="excel-tabs-group">
             <button class="excel-tab ${currentDatasetKey === 'sales' ? 'active' : ''}" data-sheet="sales">
               <span class="excel-tab-indicator"></span>
-              <span class="excel-tab-title">Sales & Commission Model</span>
+              <span class="excel-tab-title">My Clients</span>
             </button>
             <button class="excel-tab ${currentDatasetKey === 'academic' ? 'active' : ''}" data-sheet="academic">
               <span class="excel-tab-indicator"></span>
@@ -195,7 +195,7 @@
             </button>
             <button class="excel-tab ${currentDatasetKey === 'inventory' ? 'active' : ''}" data-sheet="inventory">
               <span class="excel-tab-indicator"></span>
-              <span class="excel-tab-title">Hardware Inventory Tracker</span>
+              <span class="excel-tab-title">Project Tracker</span>
             </button>
           </div>
         </div>

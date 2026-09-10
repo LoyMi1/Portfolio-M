@@ -241,23 +241,15 @@ const portfolioProjects = [
 // Interactive Excel Playground Datasets for the Live Dashboard Simulator
 const excelSimulatorData = {
   sales: {
-    title: "Quarterly Enterprise Sales & Regional Commission",
+    title: "Showing all my clients",
     formula: "=SUMIFS(Sales[Revenue], Sales[Region], @SelectedRegion, Sales[Quarter], @SelectedQtr)",
-    headers: ["ID", "Sales Rep", "Region", "Quarter", "Units", "Revenue ($)", "Margin (%)", "Commission ($)", "Status"],
+    headers: ["Number", "Name", "Client", "Status"],
+// input data for the clients names
     rows: [
-      ["TX-101", "Miels Flores", "North", "Q1", 240, 184000, "34%", 12880, "Exceeded"],
-      ["TX-102", "Sarah Jenkins", "North", "Q1", 195, 142000, "31%", 8520, "Achieved"],
-      ["TX-103", "David Kim", "West", "Q1", 210, 168000, "36%", 11760, "Exceeded"],
-      ["TX-104", "Elena Vance", "East", "Q1", 160, 115000, "28%", 5750, "Achieved"],
-      ["TX-105", "Marcus Brody", "South", "Q1", 130, 92000, "25%", 3680, "In Progress"],
-      ["TX-106", "Miels Flores", "North", "Q2", 275, 210000, "37%", 16800, "Exceeded"],
-      ["TX-107", "Sarah Jenkins", "North", "Q2", 220, 172000, "33%", 12040, "Exceeded"],
-      ["TX-108", "David Kim", "West", "Q2", 235, 189000, "35%", 13230, "Exceeded"],
-      ["TX-109", "Elena Vance", "East", "Q2", 190, 145000, "30%", 8700, "Achieved"],
-      ["TX-110", "Marcus Brody", "South", "Q2", 155, 112000, "27%", 6160, "Achieved"]
+      [1, "N/A", "Client 1", "0 Completed"],
     ],
+
     summaryCards: [
-      { label: "Total Filtered Revenue", key: "totalRev", format: "currency" },
       { label: "Total Commissions Paid", key: "totalComm", format: "currency" },
       { label: "Average Profit Margin", key: "avgMargin", format: "percent" },
       { label: "Top Performing Rep", key: "topRep", format: "text" }
@@ -272,16 +264,16 @@ const excelSimulatorData = {
     formula: "=LET(credits, Courses[Units], grades, Courses[GradePoint], SUMPRODUCT(credits, grades)/SUM(credits))",
     headers: ["Course Code", "Course Title", "Category", "Units", "Midterm", "Finals", "Grade Pt", "Remark"],
     rows: [
-      ["IT-101", "Introduction to Computing", "Major", 3, 94, 96, 1.25, "Passed (Superior)"],
-      ["IT-102", "Computer Programming 1 (Logic)", "Major", 3, 96, 98, 1.00, "Passed (Highest)"],
-      ["IT-103", "Discrete Structures", "Math/Foundations", 3, 89, 91, 1.75, "Passed (Very Good)"],
-      ["IT-104", "Data Analysis with MS Excel", "Analytics", 3, 98, 100, 1.00, "Passed (Highest)"],
-      ["GE-001", "Understanding the Self", "General Ed", 3, 92, 93, 1.50, "Passed (Superior)"],
-      ["IT-201", "Web Systems & Technologies 1", "Major", 3, 97, 98, 1.00, "Passed (Highest)"],
-      ["IT-202", "Data Structures & Algorithms", "Major", 3, 93, 95, 1.25, "Passed (Superior)"],
-      ["IT-203", "UI/UX & Digital Media Design", "Design Elective", 3, 99, 99, 1.00, "Passed (Highest)"],
-      ["IT-204", "Database Management Systems", "Major", 3, 95, 96, 1.25, "Passed (Superior)"],
-      ["GE-002", "Purposive Communication", "General Ed", 3, 91, 94, 1.50, "Passed (Superior)"]
+      ["IT-101", "CAPSTONE PROJECT AND RESEARCH 2", "Major", 3.0, 93, 90, 1.4, "Passed (Superior)"],
+      ["IT-102", "DATA STRUCTURES AND ALGORITHMS", "Major", 3, 95, 92, 1.3, "Passed (Highest)"],
+      ["IT-103", "INTEGRATIVE PROGRAMMING AND TECHNOLOGIES", "Major", 3, 95, 91, 1.4, "Passed (Very Good)"],
+      ["IT-104", "OBJECT-ORIENTED PROGRAMMING", "Analytics", 3, 91, 87, 1.8, "Passed (Highest)"],
+      ["GE-001", "UNDERSTANDING THE SELF", "General Ed", 3, 92, 93, 1.50, "Passed (Superior)"],
+      ["IT-201", "PLATFORM TECHNOLOGIES", "Major", 3, 93, 89, 1.6, "Passed (Highest)"],
+      ["IT-202", "SYSTEM ADMINISTRATION AND MAINTENANCE", "Major", 3, 94, 92, 1.3, "Passed (Superior)"],
+      ["IT-203", "UI/UX & Digital Media Design", "Design Elective", 3, 90, 89, 1.7, "Passed (Highest)"],
+      ["IT-204", "Database Management Systems", "Major", 3, 92, 88, 1.7, "Passed (Superior)"],
+      ["GE-002", "PURPOSIVE COMMUNICATION", "General Ed", 3, 91, 94, 1.50, "Passed (Superior)"]
     ],
     summaryCards: [
       { label: "Cumulative GWA / GPA", key: "gpa", format: "decimal" },
@@ -294,18 +286,13 @@ const excelSimulatorData = {
     }
   },
   inventory: {
-    title: "Dynamic Hardware & Supplies Reorder Threshold Tracker",
+    title: "Project Finish Tracker",
     formula: "=IF([@[CurrentStock]] <= [@[ReorderLevel]], \"REORDER NOW\", \"OPTIMAL\")",
-    headers: ["SKU", "Item Description", "Category", "In Stock", "Safety Stock", "Reorder Pt", "Unit Cost ($)", "Inventory Value ($)", "Action Status"],
+    headers: ["Number", "Name", "Project", "Status"],
+    
+    // Project is done put it here
     rows: [
-      ["SKU-801", "Mechanical Keyboard Switches (110x)", "Peripherals", 42, 15, 25, 45.00, 1890.00, "Optimal"],
-      ["SKU-802", "Type-C High-Speed Braided Cables", "Cables/Adapters", 12, 20, 30, 8.50, 102.00, "REORDER NOW"],
-      ["SKU-803", "1080p Ultra-Wide HD Webcams", "Cameras", 8, 10, 15, 62.00, 496.00, "REORDER NOW"],
-      ["SKU-804", "Precision Graphic Drawing Tablets", "Design Gear", 28, 8, 14, 120.00, 3360.00, "Optimal"],
-      ["SKU-805", "Dual Monitor Articulating Arms", "Mounts/Desk", 19, 10, 18, 55.00, 1045.00, "Optimal"],
-      ["SKU-806", "Cat6 High-Shielded Patch Cables (50m)", "Networking", 6, 15, 22, 18.00, 108.00, "REORDER NOW"],
-      ["SKU-807", "1TB NVMe PCIe 4.0 SSD Modules", "Storage", 35, 12, 20, 89.00, 3115.00, "Optimal"],
-      ["SKU-808", "Anti-Static Tech Repair Toolkits", "Tools", 24, 10, 16, 32.00, 768.00, "Optimal"]
+      [1, "N/A", "0", "N/A"],
     ],
     summaryCards: [
       { label: "Total Inventory Valuation", key: "totalValuation", format: "currency" },

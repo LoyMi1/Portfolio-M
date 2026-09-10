@@ -21,13 +21,13 @@ function initRoleTyping() {
   const roles = [
     "Graphic Designer & Visual Artist",
     "Modern Web Developer",
-    "Excel & Data Analytics Specialist",
-    "IT Student @ NNVS Alum"
+    "Canva & Excel Specialist",
+    "IT Student"
   ];
   let roleIdx = 0;
   let charIdx = 0;
   let isDeleting = false;
-  let delay = 100;
+  let delay = 90;
 
   function tick() {
     const current = roles[roleIdx];
@@ -451,6 +451,26 @@ function initClipboard() {
     });
   });
 }
+
+function initProjectsClipboard() {
+  const copyBtn = document.getElementById("copy-projects-btn");
+  if (!copyBtn) return;
+
+  copyBtn.addEventListener("click", () => {
+    const link = "https://canva.link/aps97xjmtblhu00";
+    navigator.clipboard.writeText(link).then(() => {
+      showToast("Copied Canva projects link to clipboard!", "success");
+    }).catch(() => {
+      showToast("Projects link: " + link, "info");
+    });
+  });
+}
+
+// Run it after DOM loads
+document.addEventListener("DOMContentLoaded", () => {
+  initProjectsClipboard();
+});
+
 
 function showToast(message, type = "info") {
   let toastContainer = document.getElementById("toast-container");
