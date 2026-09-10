@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+    <defs>
+      <linearGradient id="socSweep" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#07070d"/>
+        <stop offset="35%" stop-color="#2a0845"/>
+        <stop offset="70%" stop-color="#7c3aed"/>
+        <stop offset="100%" stop-color="#38bdf8"/>
+      </linearGradient>
+    </defs>
+    <rect width="800" height="500" fill="#06060c"/>
+    <rect x="25" y="25" width="750" height="450" rx="16" fill="#0e0a1f" stroke="#7c3aed" stroke-opacity="0.4" stroke-width="1.5"/>
+    <text x="60" y="70" fill="#38bdf8" font-family="sans-serif" font-size="12" font-weight="bold" letter-spacing="2">HORIZON SOCIAL CREATOR SYSTEM</text>
+    <text x="60" y="105" fill="#ffffff" font-family="sans-serif" font-size="24" font-weight="900">Multi-Channel Visual Collateral</text>
+    <rect x="60" y="130" width="190" height="240" rx="12" fill="url(#socSweep)"/>
+    <text x="75" y="170" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="900">PODCAST COVER</text>
+    <circle cx="155" cy="240" r="35" fill="#ffffff" fill-opacity="0.15" stroke="#38bdf8" stroke-width="2"/>
+    <text x="155" y="247" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="900" text-anchor="middle">EP. 04</text>
+    <text x="75" y="330" fill="#e2e8f0" font-family="sans-serif" font-size="11">Tech Innovations in 2026</text>
+    <rect x="280" y="130" width="220" height="240" rx="12" fill="#150f2e" stroke="#7c3aed"/>
+    <rect x="280" y="130" width="220" height="8" rx="4" fill="url(#socSweep)"/>
+    <text x="300" y="170" fill="#a78bfa" font-family="sans-serif" font-size="11" font-weight="bold">SLIDE 01 / 05</text>
+    <text x="300" y="210" fill="#ffffff" font-family="sans-serif" font-size="18" font-weight="900">Mastering Excel</text>
+    <text x="300" y="235" fill="#38bdf8" font-family="sans-serif" font-size="18" font-weight="900">Like an IT Pro</text>
+    <text x="300" y="270" fill="#94a3b8" font-family="sans-serif" font-size="11">1. Ditch VLOOKUP for XLOOKUP</text>
+    <text x="300" y="295" fill="#94a3b8" font-family="sans-serif" font-size="11">2. Leverage Dynamic Arrays</text>
+    <rect x="530" y="130" width="210" height="115" rx="10" fill="url(#socSweep)"/>
+    <text x="545" y="165" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="900">DEV PORTFOLIO REVIEW</text>
+    <text x="545" y="185" fill="#38bdf8" font-family="sans-serif" font-size="10">Modern Web Design Blueprint</text>
+    <rect x="545" y="205" width="55" height="20" rx="4" fill="#000000" fill-opacity="0.6"/>
+    <text x="555" y="218" fill="#ffffff" font-family="sans-serif" font-size="9" font-weight="bold">10:45</text>
+    <text x="60" y="420" fill="#c4b5fd" font-family="sans-serif" font-size="12">Designed in Figma &amp; Adobe Illustrator • Optimized for High-Engagement Conversions</text>
+  </svg>

@@ -1,0 +1,208 @@
+/* ==========================================================================
+   RESPONSIVE STYLESHEET
+   Optimized for Mobile, Tablet, and Desktop Displays
+   ========================================================================== */
+
+/* -------------------------------------------------------------------------- */
+/* Tablets & Medium Screens (< 1024px)                                        */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: center;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero-bio {
+    margin-inline: auto;
+  }
+
+  .hero-cta-row {
+    justify-content: center;
+  }
+
+  .hero-socials-row {
+    justify-content: center;
+  }
+
+  .hero-portrait-card {
+    width: 320px;
+  }
+
+  .pillars-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .skills-matrix-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .excel-kpi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .modal-case-split-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Mobile Devices (< 768px)                                                   */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .nav-links-group, .nav-cta-btn {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .hero-section {
+    padding-top: 110px;
+    padding-bottom: 40px;
+  }
+
+  .hero-title {
+    font-size: 2.3rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .stat-counter-card {
+    padding: 16px;
+  }
+
+  .stat-number {
+    font-size: 1.8rem;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row-split {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-card {
+    padding: 24px 20px;
+  }
+
+  .modal-scroll-body {
+    padding: 24px 18px;
+  }
+
+  .modal-case-meta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .excel-kpi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .excel-filters-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-controls-group {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-select-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .excel-select {
+    flex-grow: 1;
+  }
+
+  .floating-badge.badge-top-left {
+    left: -8px;
+    top: 12px;
+  }
+
+  .floating-badge.badge-bottom-right {
+    right: -8px;
+    bottom: 20px;
+  }
+
+  .footer-content-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-bottom-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .toast-container {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    max-width: none;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Small Phones (< 480px)                                                     */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-portrait-card {
+    width: 270px;
+  }
+
+  .hero-cta-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-primary-horizontal, .btn-secondary-horizontal {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pillar-card {
+    padding: 24px 20px;
+  }
+}
+

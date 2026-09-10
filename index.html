@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Miels Flores | IT Specialist • Graphic Designer • Web Developer • Excel Expert</title>
+  <meta name="description" content="Modernized portfolio for Miels Flores, an IT professional and student showcasing excellence in Graphic Design, Modern Web Development, and Advanced Microsoft Excel modeling." />
+  <meta name="keywords" content="Miels Flores, Portfolio, IT Student, Graphic Designer, Web Developer, Microsoft Excel, Data Analytics, NNVS" />
+  <meta name="author" content="Miels Flores" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2306060a'/><path d='M8 24L16 8L24 24' stroke='%2338bdf8' stroke-width='3' fill='none'/><line x1='11' y1='19' x2='21' y2='19' stroke='%237c3aed' stroke-width='3'/></svg>" />
+
+  <!-- Google Fonts: Plus Jakarta Sans, Outfit & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets (Strictly Horizontal Color Theory) -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <!-- Ambient Horizontal Background Glow & Scanline -->
+  <div class="horizontal-scanline"></div>
+  <div class="bg-horizontal-aurora"></div>
+
+  <!-- Main Navigation Bar -->
+  <header class="main-nav" id="main-nav">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Miels Flores Portfolio Home">
+        <div class="logo-symbol">MF</div>
+        <div>
+          <span class="logo-text-main">Miels Flores</span>
+          <span class="logo-text-sub">IT &amp; Digital Craftsman</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links-group">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#expertise" class="nav-link">Expertise</a></li>
+          <li><a href="#excel-lab" class="nav-link">Excel Lab</a></li>
+          <li><a href="#projects" class="nav-link">Portfolio</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="nav-cta-btn">
+        <span>Get in Touch</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+          <polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+    <a href="#home" class="drawer-link">Home</a>
+    <a href="#expertise" class="drawer-link">Core Expertise</a>
+    <a href="#excel-lab" class="drawer-link">Excel Lab (Live Demo)</a>
+    <a href="#projects" class="drawer-link">Portfolio Projects</a>
+    <a href="#skills" class="drawer-link">Tech Stack</a>
+    <a href="#about" class="drawer-link">About Miels</a>
+    <a href="#contact" class="drawer-link">Contact &amp; Connect</a>
+  </div>
+
+  <main>
+    <!-- ==================================================================== -->
+    <!-- HERO SECTION                                                         -->
+    <!-- ==================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <!-- Left Hero Content -->
+        <div class="hero-content">
+          <div class="hero-status-pill">
+            <span class="status-pulse-dot"></span>
+            <span>Available for Projects, Freelance &amp; Internships</span>
+          </div>
+
+          <h1 class="hero-title">
+            Bridging Creative Design, Code, &amp; <span class="text-gradient-horizontal">Analytical Precision.</span>
+          </h1>
+
+          <div class="hero-rotator-wrap">
+            <span>Specialized in:</span>
+            <span class="hero-rotator-text" id="hero-role-rotator">Graphic Designer &amp; Visual Artist</span>
+          </div>
+
+          <p class="hero-bio">
+            Hello! I'm <strong style="color: #ffffff;">Miels Flores</strong>, an Information Technology student and multi-disciplinary creator. I synthesize high-impact <strong>Graphic Design</strong>, modern responsive <strong>Web Development</strong>, and enterprise-level <strong>Microsoft Excel data modeling</strong> into cohesive digital solutions.
+          </p>
+
+          <div class="hero-cta-row">
+            <a href="#projects" class="btn-primary-horizontal">
+              <span>Explore My Work</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+            <a href="#excel-lab" class="btn-secondary-horizontal">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#38bdf8" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <line x1="3" y1="9" x2="21" y2="9"/>
+                <line x1="9" y1="21" x2="9" y2="9"/>
+              </svg>
+              <span>Launch Excel Lab</span>
+            </a>
+            <a href="#contact" class="btn-secondary-horizontal">
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <div class="hero-socials-row">
+            <a href="mailto:mielsflores101@gmail.com" class="social-pill-link" title="Send direct email">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+              <span>mielsflores101@gmail.com</span>
+            </a>
+            <span class="social-pill-link" title="Based in Philippines">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#38bdf8" stroke-width="2">
+                <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>Philippines</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual / Portrait -->
+        <div class="hero-visual-wrapper">
+          <div class="hero-glow-backdrop"></div>
+          
+          <!-- Floating Badge Top Left: Graphic Design -->
+          <div class="floating-badge badge-top-left">
+            <div class="badge-icon-box design">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                <path d="M2 2l7.586 7.586"/>
+                <circle cx="11" cy="11" r="2"/>
+              </svg>
+            </div>
+            <div class="badge-text-group">
+              <span class="badge-title">Visual Branding</span>
+              <span class="badge-desc">Figma &amp; Adobe Suite</span>
+            </div>
+          </div>
+
+          <!-- The Portrait Frame with Horizontal Gradient Border -->
+          <div class="hero-portrait-card">
+            <div class="hero-portrait-inner">
+              <img src="assets/images/miels-flores.jpg" alt="Miels Flores Academic Portrait" class="hero-portrait-img" />
+              <div class="portrait-gradient-overlay"></div>
+              <div class="portrait-footer-info">
+                <div>
+                  <div class="portrait-name-tag">Miels Flores</div>
+                  <div class="portrait-sub-tag">IT Student • NNVS Honor Roll</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Badge Bottom Right: Excel & Data -->
+          <div class="floating-badge badge-bottom-right">
+            <div class="badge-icon-box excel">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 3v18h18"/>
+                <rect x="7" y="10" width="4" height="7" rx="1"/>
+                <rect x="13" y="6" width="4" height="11" rx="1"/>
+              </svg>
+            </div>
+            <div class="badge-text-group">
+              <span class="badge-title">Excel Master</span>
+              <span class="badge-desc">Dynamic Formulas &amp; Models</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- STATS TICKER (Horizontal Layout)                                     -->
+    <!-- ==================================================================== -->
+    <section class="stats-bar-section">
+      <div class="container stats-grid">
+        <div class="stat-counter-card">
+          <div class="stat-number">25+</div>
+          <div class="stat-label">Brand &amp; Graphic Assets Created</div>
+        </div>
+        <div class="stat-counter-card">
+          <div class="stat-number">12+</div>
+          <div class="stat-label">Responsive Web Systems Built</div>
+        </div>
+        <div class="stat-counter-card">
+          <div class="stat-number">40+</div>
+          <div class="stat-label">Automated Excel Sheets &amp; Models</div>
+        </div>
+        <div class="stat-counter-card">
+          <div class="stat-number">1.18</div>
+          <div class="stat-label">Weighted GWA / High Honors Standing</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- CORE PILLARS (Design, Web Dev, Excel)                                -->
+    <!-- ==================================================================== -->
+    <section class="pillars-section" id="expertise">
+      <div class="container">
+        <div class="section-heading-block">
+          <div class="section-tag-pill">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+              <polyline points="2 17 12 22 22 17"/>
+              <polyline points="2 12 12 17 22 12"/>
+            </svg>
+            <span>Multi-Disciplinary Toolkit</span>
+          </div>
+          <h2 class="section-title">Three Core Pillars of <span class="text-gradient-horizontal">Digital Craft</span></h2>
+          <p class="section-subtitle">
+            Harmonizing aesthetic visual design, robust software engineering, and analytical data intelligence to build high-impact digital solutions.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- Pillar 1: Graphic Design -->
+          <div class="pillar-card glow-hover-card">
+            <div class="pillar-icon-box">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                <path d="M2 2l7.586 7.586"/>
+                <circle cx="11" cy="11" r="2"/>
+              </svg>
+            </div>
+            <span class="pillar-badge">Creative &amp; Visual Identity</span>
+            <h3 class="pillar-title">Graphic Designing</h3>
+            <p class="pillar-desc">
+              Crafting distinct brand identities, modern typography lockups, high-conversion social assets, and UI/UX wireframes with optical harmony and balance.
+            </p>
+            <ul class="pillar-skills-list">
+              <li>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Vector Brand Marks &amp; Logo Systems</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>UI/UX Layouts &amp; Figma Design Systems</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Print, Poster &amp; Event Media Collateral</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Photoshop Compositing &amp; Matte Artwork</span>
+              </li>
+            </ul>
+            <a href="#projects" class="pillar-footer-link">
+              <span>View Design Projects</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+
+          <!-- Pillar 2: Web Development -->
+          <div class="pillar-card glow-hover-card">
+            <div class="pillar-icon-box">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+            <span class="pillar-badge">Frontend &amp; Systems</span>
+            <h3 class="pillar-title">Web Development</h3>
+            <p class="pillar-desc">
+              Architecting fast, responsive, and accessible web experiences using modern semantic HTML5, modern CSS3 architectures, and reactive ES6+ JavaScript.
+            </p>
+            <ul class="pillar-skills-list">
+              <li>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Responsive Design Across Mobile to 4K</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Clean Vanilla JS &amp; Modern Frameworks</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Glassmorphism &amp; Horizontal CSS Glows</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Performance &amp; Accessibility (WCAG 2.1)</span>
+              </li>
+            </ul>
+            <a href="#projects" class="pillar-footer-link">
+              <span>View Web Projects</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+
+          <!-- Pillar 3: Advanced Excel -->
+          <div class="pillar-card glow-hover-card">
+            <div class="pillar-icon-box">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <line x1="3" y1="9" x2="21" y2="9"/>
+                <line x1="3" y1="15" x2="21" y2="15"/>
+                <line x1="9" y1="3" x2="9" y2="21"/>
+                <line x1="15" y1="3" x2="15" y2="21"/>
+              </svg>
+            </div>
+            <span class="pillar-badge">Analytics &amp; Automation</span>
+            <h3 class="pillar-title">Advanced Excel</h3>
+            <p class="pillar-desc">
+              Transforming raw data into automated business intelligence. Mastery over modern lookup formulas, multi-condition logic, dynamic Pivot Tables, and visual KPI dashboards.
+            </p>
+            <ul class="pillar-skills-list">
+              <li>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Nested XLOOKUP, INDEX-MATCH &amp; LET</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Dynamic Pivot Tables, Slicers &amp; Timelines</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Executive KPI Dashboards &amp; Data Bars</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Data Normalization, Cleaning &amp; Validation</span>
+              </li>
+            </ul>
+            <a href="#excel-lab" class="pillar-footer-link">
+              <span>Test Interactive Simulator</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- INTERACTIVE EXCEL LAB SIMULATOR (Live Widget)                        -->
+    <!-- ==================================================================== -->
+    <section class="excel-simulator-section" id="excel-lab">
+      <div class="container">
+        <div class="section-heading-block">
+          <div class="section-tag-pill">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+            <span>Live Interactive Demo</span>
+          </div>
+          <h2 class="section-title">The Interactive <span class="text-gradient-horizontal">Excel Analytics Lab</span></h2>
+          <p class="section-subtitle">
+            Test my spreadsheet architecture right in your browser. Switch real datasets, click slicers, inspect cell formulas, and observe dynamic recalculations in real time.
+          </p>
+        </div>
+
+        <!-- Render Target for js/excel-simulator.js -->
+        <div id="excel-simulator-container"></div>
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- PORTFOLIO SHOWCASE (All, Graphic Design, Web Dev, Excel)             -->
+    <!-- ==================================================================== -->
+    <section class="portfolio-section" id="projects">
+      <div class="container">
+        <div class="section-heading-block">
+          <div class="section-tag-pill">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+            </svg>
+            <span>Featured Case Studies</span>
+          </div>
+          <h2 class="section-title">Featured Works &amp; <span class="text-gradient-horizontal">Case Studies</span></h2>
+          <p class="section-subtitle">
+            A curated showcase of real projects across Graphic Design, Web Development, and Excel Modeling. Click on any project card to inspect the complete blueprint.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="portfolio-filter-row">
+          <button type="button" class="portfolio-filter-btn active" data-filter="all">All Projects</button>
+          <button type="button" class="portfolio-filter-btn" data-filter="graphic-design">Graphic Design</button>
+          <button type="button" class="portfolio-filter-btn" data-filter="web-dev">Web Development</button>
+          <button type="button" class="portfolio-filter-btn" data-filter="excel">Excel Solutions</button>
+        </div>
+
+        <!-- Projects Grid (Injected via js/app.js) -->
+        <div class="portfolio-grid" id="portfolio-grid"></div>
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- SKILLS & TECH STACK MATRIX                                           -->
+    <!-- ==================================================================== -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading-block">
+          <div class="section-tag-pill">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+            <span>Technical Proficiency</span>
+          </div>
+          <h2 class="section-title">Skills &amp; <span class="text-gradient-horizontal">Tooling Competencies</span></h2>
+          <p class="section-subtitle">
+            Measured proficiency across creative software, software engineering libraries, and business intelligence spreadsheet tools.
+          </p>
+        </div>
+
+        <div class="skills-matrix-grid">
+          <!-- Column 1: Graphic Design Suite -->
+          <div class="skill-category-card">
+            <h3 class="skill-cat-title">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+              </svg>
+              <span>Creative Design Suite</span>
+            </h3>
+            <div class="skill-bars-list">
+              <div class="skill-bar-item">
+                <div class="skill-label-row">
+                  <span class="skill-name">Adobe Photoshop</span>
+                  <span class="skill-percent">94%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" style="width: 94%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-label-row">
+                  <span class="skill-name">Adobe Illustrator (Vector)</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" style="width: 90%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-label-row">
+                  <span class="skill-name">Figma (UI/UX Systems)</span>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" style="width: 88%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-label-row">
+                  <span class="skill-name">Canva Pro &amp; Layouts</span>
+                  <span class="skill-percent">96%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" style="width: 96%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Web Development -->
+          <div class="skill-category-card">
+            <h3 class="skill-cat-title">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+              </svg>
+              <span>Web Development Stack</span>
+            </h3>
+            <div class="skill-bars-list">
+              <div class="skill-bar-item">
+                <div class="skill-label-row">
+                  <span class="skill-name">Semantic HTML5 &amp; Modern CSS3</span>
+                  <span class="skill-percent">95%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" style="width: 95%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-label-row">
+                  <span class="skill-name">JavaScript (ES6+ &amp; DOM)</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" style="width: 90%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-label-row">
+                  <span class="skill-name">Responsive Design &amp; Flex/Grid</span>
+                  <span class="skill-percent">96%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" style="width: 96%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-label-row">
+                  <span class="skill-name">Git &amp; GitHub Versioning</span>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" style="width: 88%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 3: Advanced Excel -->
+          <div class="skill-category-card">
+            <h3 class="skill-cat-title">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <line x1="3" y1="9" x2="21" y2="9"/>
+                <line x1="9" y1="21" x2="9" y2="9"/>
+              </svg>
+              <span>Microsoft Excel &amp; Data</span>
+            </h3>
+            <div class="skill-bars-list">
+              <div class="skill-bar-item">
+                <div class="skill-label-row">
+                  <span class="skill-name">Advanced Formulas (XLOOKUP, LET)</span>
+                  <span class="skill-percent">96%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" style="width: 96%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-label-row">
+                  <span class="skill-name">Pivot Tables, Slicers &amp; Charts</span>
+                  <span class="skill-percent">95%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" style="width: 95%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-label-row">
+                  <span class="skill-name">Conditional Logic &amp; Auditing</span>
+                  <span class="skill-percent">94%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" style="width: 94%;"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-label-row">
+                  <span class="skill-name">Power Query &amp; Data Cleansing</span>
+                  <span class="skill-percent">89%</span>
+                </div>
+                <div class="skill-meter-track">
+                  <div class="skill-meter-fill" style="width: 89%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- ABOUT MIELS FLORES & EDUCATION                                       -->
+    <!-- ==================================================================== -->
+    <section class="about-section" id="about">
+      <div class="container about-grid">
+        <!-- Story Column -->
+        <div class="about-story-col">
+          <div class="section-tag-pill">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+            <span>Background &amp; Story</span>
+          </div>
+          <h3>Driven by Logic, <span class="text-gradient-horizontal">Guided by Aesthetics</span></h3>
+          <p class="about-prose">
+            I am an Information Technology student with a deep passion for the intersection between visual creativity and algorithmic precision. While many developers focus solely on syntax and many designers focus exclusively on visuals, I believe true digital excellence happens when design aesthetics, front-end code, and spreadsheet data architectures speak the exact same language.
+          </p>
+          <p class="about-prose">
+            From crafting geometric branding systems and modern responsive web applications to building multi-tiered financial forecasting models in Microsoft Excel, I take pride in delivering solutions that are both visually captivating and mathematically dependable.
+          </p>
+          <div class="about-highlight-box">
+            <p>
+              "Excellence isn't just about how code runs or how a layout looks; it's about how effortlessly and accurately it serves human needs."
+            </p>
+          </div>
+        </div>
+
+        <!-- Education Card Column -->
+        <div class="education-card">
+          <div class="edu-header">
+            <div class="edu-icon-wrap">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+            </div>
+            <div>
+              <h4 style="font-size: 1.25rem; color: #ffffff;">Academic Foundations</h4>
+              <span style="font-size: 0.82rem; color: var(--c-highlight);">Education &amp; Credentials</span>
+            </div>
+          </div>
+
+          <div class="edu-timeline">
+            <!-- Current Degree -->
+            <div class="edu-item">
+              <div class="edu-dot"></div>
+              <div class="edu-period">Current • Undergraduate Degree</div>
+              <div class="edu-degree">Bachelor of Science in Information Technology (BSIT)</div>
+              <div class="edu-school">College of Information Technology</div>
+              <p class="edu-desc">
+                Specializing in Web Systems Technologies, Database Management, UI/UX Design, and Quantitative Data Analysis. Consistent Dean's and President's List honor standing.
+              </p>
+            </div>
+
+            <!-- NNVS Graduation Foundation -->
+            <div class="edu-item">
+              <div class="edu-dot"></div>
+              <div class="edu-period">Graduated with High Honors</div>
+              <div class="edu-degree">Technical-Vocational Academic Foundation</div>
+              <div class="edu-school">Nasipit National Vocational School (NNVS)</div>
+              <p class="edu-desc">
+                Developed rigorous discipline, hands-on technical problem-solving, and foundational vocational excellence leading to graduation recognition and academic honors.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================== -->
+    <!-- CONTACT SECTION & CONNECT                                            -->
+    <!-- ==================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading-block">
+          <div class="section-tag-pill">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>Let's Connect</span>
+          </div>
+          <h2 class="section-title">Ready to Start a <span class="text-gradient-horizontal">New Project?</span></h2>
+          <p class="section-subtitle">
+            Whether you need a full visual branding package, a modern responsive web app, or an automated Excel dashboard model, I'm ready to collaborate.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Direct Contact Cards -->
+          <div class="contact-info-col">
+            <div class="contact-direct-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div class="contact-card-body">
+                <span class="contact-card-title">Direct Email</span>
+                <span class="contact-card-value">mielsflores101@gmail.com</span>
+              </div>
+              <button type="button" class="copy-email-btn" id="copy-email-btn" title="Copy Email Address">
+                Copy
+              </button>
+            </div>
+
+            <div class="contact-direct-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="contact-card-body">
+                <span class="contact-card-title">Current Location</span>
+                <span class="contact-card-value">Philippines • Available for Global Remote</span>
+              </div>
+            </div>
+
+            <div class="contact-direct-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div class="contact-card-body">
+                <span class="contact-card-title">Availability</span>
+                <span class="contact-card-value">Available for Projects &amp; Part-time/Internships</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Glass Form -->
+          <div class="contact-form-card">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row-split">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Your Name *</label>
+                  <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Santos" required />
+                </div>
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Your Email *</label>
+                  <input type="email" id="contact-email" class="form-input" placeholder="alex@company.com" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Project Domain</label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="e.g. Graphic Design / Web Build / Excel Automation" />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Project Details &amp; Message *</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Describe your goals, requirements, timeline, or inquiries..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit-contact">
+                <span>Transmit Message</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================================================================== -->
+  <!-- PROJECT CASE STUDY MODAL                                             -->
+  <!-- ==================================================================== -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-scroll-body" id="modal-project-details">
+        <!-- Injected dynamically via js/app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Stack -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- ==================================================================== -->
+  <!-- SITE FOOTER                                                          -->
+  <!-- ==================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content-row">
+        <div class="footer-brand">
+          <div class="footer-logo">Miels Flores</div>
+          <div class="footer-tagline">Information Technology Student • Graphic Design • Web Dev • Excel Modeling</div>
+        </div>
+        <div class="footer-links-group">
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#expertise" class="footer-link">Expertise</a>
+          <a href="#excel-lab" class="footer-link">Excel Lab</a>
+          <a href="#projects" class="footer-link">Portfolio</a>
+          <a href="#skills" class="footer-link">Skills</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div>
+          &copy; 2026 Miels Flores. All rights reserved. Built with precision and modern web standards.
+        </div>
+        <div class="footer-color-badge" title="Horizontal Color Theory: Black -> Dark Violet -> Violet -> Blue">
+          <span>Horizontal Chromatic Theory:</span>
+          <div class="color-dots-horizontal">
+            <span class="color-dot black" title="Base: Black"></span>
+            <span class="color-dot dark-violet" title="Low-light: Dark Violet"></span>
+            <span class="color-dot violet" title="Mid-tone: Violet"></span>
+            <span class="color-dot blue" title="Highlight: Blue"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/portfolio-data.js"></script>
+  <script src="js/excel-simulator.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
+
