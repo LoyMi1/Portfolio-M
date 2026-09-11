@@ -250,8 +250,8 @@ const excelSimulatorData = {
     ],
 
     summaryCards: [
-      { label: "Total clients", key: "totalComm", format: "currency" },
-      { label: "Average clients", key: "avgMargin", format: "percent" },
+      { label: "Total Commissions Paid", key: "totalComm", format: "currency" },
+      { label: "Average Profit Margin", key: "avgMargin", format: "percent" },
       { label: "Top Performing Rep", key: "topRep", format: "text" }
     ],
     filterOptions: {
@@ -264,16 +264,16 @@ const excelSimulatorData = {
     formula: "=LET(credits, Courses[Units], grades, Courses[GradePoint], SUMPRODUCT(credits, grades)/SUM(credits))",
     headers: ["Course Code", "Course Title", "Category", "Units", "Midterm", "Finals", "Grade Pt", "Remark"],
     rows: [
-      ["IT-101", "CAPSTONE PROJECT AND RESEARCH 2", "Major", 3.0, 93, 90, 1.4, "Passed"],
-      ["IT-102", "DATA STRUCTURES AND ALGORITHMS", "Major", 3, 95, 92, 1.3, "Passed"],
-      ["IT-103", "INTEGRATIVE PROGRAMMING AND TECHNOLOGIES", "Major", 3, 95, 91, 1.4, "Passed"],
-      ["IT-104", "OBJECT-ORIENTED PROGRAMMING", "Analytics", 3, 91, 87, 1.8, "Passed"],
-      ["GE-001", "UNDERSTANDING THE SELF", "General Ed", 3, 92, 93, 1.50, "Passed"],
-      ["IT-201", "PLATFORM TECHNOLOGIES", "Major", 3, 93, 89, 1.6, "Passed"],
-      ["IT-202", "SYSTEM ADMINISTRATION AND MAINTENANCE", "Major", 3, 94, 92, 1.3, "Passed"],
-      ["IT-203", "UI/UX & Digital Media Design", "Design Elective", 3, 90, 89, 1.7, "Passed"],
-      ["IT-204", "Database Management Systems", "Major", 3, 92, 88, 1.7, "Passed"],
-      ["GE-002", "PURPOSIVE COMMUNICATION", "General Ed", 3, 91, 94, 1.50, "Passed"]
+      ["IT-101", "CAPSTONE PROJECT AND RESEARCH 2", "Major", 3.0, 93, 90, 1.4, "Passed (Superior)"],
+      ["IT-102", "DATA STRUCTURES AND ALGORITHMS", "Major", 3, 95, 92, 1.3, "Passed (Highest)"],
+      ["IT-103", "INTEGRATIVE PROGRAMMING AND TECHNOLOGIES", "Major", 3, 95, 91, 1.4, "Passed (Very Good)"],
+      ["IT-104", "OBJECT-ORIENTED PROGRAMMING", "Analytics", 3, 91, 87, 1.8, "Passed (Highest)"],
+      ["GE-001", "UNDERSTANDING THE SELF", "General Ed", 3, 92, 93, 1.50, "Passed (Superior)"],
+      ["IT-201", "PLATFORM TECHNOLOGIES", "Major", 3, 93, 89, 1.6, "Passed (Highest)"],
+      ["IT-202", "SYSTEM ADMINISTRATION AND MAINTENANCE", "Major", 3, 94, 92, 1.3, "Passed (Superior)"],
+      ["IT-203", "UI/UX & Digital Media Design", "Design Elective", 3, 90, 89, 1.7, "Passed (Highest)"],
+      ["IT-204", "Database Management Systems", "Major", 3, 92, 88, 1.7, "Passed (Superior)"],
+      ["GE-002", "PURPOSIVE COMMUNICATION", "General Ed", 3, 91, 94, 1.50, "Passed (Superior)"]
     ],
     summaryCards: [
       { label: "Cumulative GWA / GPA", key: "gpa", format: "decimal" },

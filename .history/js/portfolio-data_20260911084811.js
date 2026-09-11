@@ -246,12 +246,12 @@ const excelSimulatorData = {
     headers: ["Number", "Name", "Client", "Status"],
 // input data for the clients names
     rows: [
-      [1, "N/A", "Client 1", "0 Completed"],
+      [1, "Miels Flores", "Client 1", "0 Completed"],
     ],
 
     summaryCards: [
-      { label: "Total clients", key: "totalComm", format: "currency" },
-      { label: "Average clients", key: "avgMargin", format: "percent" },
+      { label: "Total client", key: "totalClients", format: "currency" },
+      { label: "Total Projects", key: "totalProjects", format: "percent" },
       { label: "Top Performing Rep", key: "topRep", format: "text" }
     ],
     filterOptions: {

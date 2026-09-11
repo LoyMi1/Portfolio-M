@@ -22,7 +22,6 @@ function initRoleTyping() {
     "Graphic Designer & Visual Artist",
     "Modern Web Developer",
     "Canva & Excel Specialist",
-    "Web Designer",
   ];
   let roleIdx = 0;
   let charIdx = 0;

@@ -250,8 +250,8 @@ const excelSimulatorData = {
     ],
 
     summaryCards: [
-      { label: "Total clients", key: "totalComm", format: "currency" },
-      { label: "Average clients", key: "avgMargin", format: "percent" },
+      { label: "Total Commissions Paid", key: "totalComm", format: "currency" },
+      { label: "Average Profit Margin", key: "avgMargin", format: "percent" },
       { label: "Top Performing Rep", key: "topRep", format: "text" }
     ],
     filterOptions: {
